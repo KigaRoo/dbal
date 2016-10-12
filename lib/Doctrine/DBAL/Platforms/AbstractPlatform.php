@@ -2379,3 +2379,4 @@ abstract class AbstractPlatform
         throw DBALException::notSupported(__METHOD__);
     }
 }
+
