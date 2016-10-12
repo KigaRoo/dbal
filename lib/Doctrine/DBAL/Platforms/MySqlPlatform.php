@@ -690,4 +690,14 @@ class MySqlPlatform extends AbstractPlatform
 
         return 'DROP TEMPORARY TABLE ' . $table;
     }
+
+    public function getDisableForeignKeyChecksSQL()
+    {
+        return 'SET foreign_key_checks = 0';
+    }
+
+    public function getEnableForeignKeyChecksSQL()
+    {
+        return 'SET foreign_key_checks = 1';
+    }
 }

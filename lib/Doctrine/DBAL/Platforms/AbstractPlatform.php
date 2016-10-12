@@ -2368,4 +2368,14 @@ abstract class AbstractPlatform
     {
         throw DBALException::notSupported(__METHOD__);
     }
+
+    public function getDisableForeignKeyChecksSQL()
+    {
+        throw DBALException::notSupported(__METHOD__);
+    }
+
+    public function getEnableForeignKeyChecksSQL()
+    {
+        throw DBALException::notSupported(__METHOD__);
+    }
 }

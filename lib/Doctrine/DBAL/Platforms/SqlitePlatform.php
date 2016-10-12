@@ -492,4 +492,14 @@ class SqlitePlatform extends AbstractPlatform
     {
         return 'Doctrine\DBAL\Platforms\Keywords\SQLiteKeywords';
     }
+
+    public function getDisableForeignKeyChecksSQL()
+    {
+        return 'PRAGMA foreign_keys = OFF';
+    }
+
+    public function getEnableForeignKeyChecksSQL()
+    {
+        return 'PRAGMA foreign_keys = ON';
+    }
 }
